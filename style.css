@@ -1,0 +1,16 @@
+body {
+    direction: rtl;
+    font-family: "iransans";
+    font-weight: 900;
+    font-size: 24px;
+
+}
+
+@font-face {
+    font-family: "iransans";
+    src: url('./font/irsans.ttf') format('woff');
+}
+
+.col4-header {
+    border: 1px solid;
+}
