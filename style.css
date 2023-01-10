@@ -1,6 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,500,600);
+
 body {
     direction: rtl;
     font-family: "iransans";
+    /* font-family: sans-serif !important; */
+
     /* font-size: 24px; */
 }
 
