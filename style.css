@@ -1,20 +1,40 @@
 body {
     direction: rtl;
     font-family: "iransans";
-    font-weight: 900;
-    font-size: 24px;
+    /* font-size: 24px; */
 }
+
+
+
+
 
 @font-face {
     font-family: "iransans";
     src: url('./font/irsans.ttf') format('woff');
 }
 
-.col4-header {
-    /* border: 1px solid; */
+.col-4 {
+    border: 1px solid red;
+    padding-left: 0;
 }
 
 .col4-header a {
     text-decoration: none;
     color: black;
+    font-size: 24px;
+    font-weight: 900;
+
+
+}
+
+.noborder {
+    border: none;
+}
+
+.row {
+    margin-left: 0;
+}
+
+.list-group-item-action.active {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
