@@ -140,9 +140,15 @@
                     <div id="cont-edit-office" class="tab-pane fade" role="tabpanel"
                         aria-labelledby="list-profile-list">
 
-                        <form action="" class="form-control needs-validation" novalidate>
-                            <label for=" OName">نام اداره:</label>
-                            <input required type="text" name="" id="OName" class="form-control">
+                        <form id="Oform" action="" class="form-control needs-validation" novalidate>
+                            <div class="input-group form-control">
+                                <label for=" OName" class="col-sm-12">نام اداره:</label>
+                                <input required id="nameinp" type="text" name="nameinp" id="OName"
+                                    class="form-control col-sm-12">
+                                <span id="feedbakcspan" class="input-feekback col-sm-12">نام اداره را به فارسی وارد
+                                    کنید</span>
+                            </div>
+
 
 
                             <div class="input-group form-control">
@@ -182,7 +188,7 @@
                                 <label for="GWTci" class="form-inline"> GW مخابراتی:</label>
                                 <input required class="form-control" type="text" name="" id="GWTci" class="form-inline">
                             </div>
-                            <button class="btn btn-success" type="submit">ثبت اطلاعات</button>
+                            <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
                             <button class="btn btn-warning">از نو</button>
                             <button class="btn btn-primary" type="submit">Submit form</button>
                         </form>
@@ -204,26 +210,8 @@
         </div>
     </div>
     <script src="./bootstrap.bundle.js"></script>
-    <script>
-        (() => {
-            'use strict'
+    <script src="./index.js"></script>
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-    </script>
 </body>
 
 </html>

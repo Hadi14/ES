@@ -12,20 +12,19 @@
 
 <body>
 
+    <form id="Oform" action="" class="form-control needs-validation" novalidate>
+        <label for=" OName">name</label>
+        <input required id="nameinp" type="text" name="nameinp" id="OName" class="form-control">
+        <div class="input-group form-control">
+            <label class="col-sm-12" for="IPrange"> family</label>
 
-    <form class="form-control">
-        <div class="">
-            <!-- <label for="validationServer01" class="form-label">First name</label> -->
-            <input type="text" class="form-control is-invalid" id="validationServer01" value="Mark" required>
-            <div class="valid-feedback">
-                Looks good!
-            </div>
+            <input required class="form-control" type="number" max="254" min="1" name="" id="IPrange">
         </div>
-
+        <button class="btn btn-success" id="submitbtn" type="submit">submit </button>
     </form>
 
-
     <script src="./bootstrap.bundle.js"></script>
+    <script src="./test.js"></script>
 </body>
 
 </html>

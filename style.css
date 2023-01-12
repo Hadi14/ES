@@ -139,3 +139,19 @@ body {
     margin: 50px auto;
     border-radius: 10px;
 }
+
+.invalid {
+    border-color: red !important;
+}
+
+.valid {
+    border-color: green !important;
+}
+
+.color-red {
+    color: red;
+}
+
+#feedbakcspan {
+    font-size: 12px;
+}
