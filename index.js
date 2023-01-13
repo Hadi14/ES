@@ -80,3 +80,17 @@
             form.classList.add('was-validated')
         })
 })()
+
+
+const tbtn = document.getElementById('toggle-btn');
+const col4 = document.getElementById('col4');
+const overlay = document.getElementById('overlay');
+const inp = document.querySelector('.inp');
+tbtn.addEventListener('click', () => {
+    col4.classList.remove("d-none");
+    col4.classList.add("d-block");
+    col4.style.zIndex = 1;
+    console.log("ok");
+    inp.style.zIndex = -1;
+    overlay.classList.add('overlay');
+})
