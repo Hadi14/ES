@@ -60,6 +60,7 @@ body {
 
 .container-fluid {
     padding: 0;
+
 }
 
 
@@ -79,7 +80,7 @@ body {
     background: linear-gradient(90deg, rgba(121, 32, 162, 1) 0%, rgba(101, 41, 161, 1) 36%, rgba(82, 49, 160, 1) 67%, rgba(69, 54, 160, 1) 100%); */
 
     /* position: absolute; */
-    /* z-index: -1; */
+    z-index: 0;
     /* top: 64px; */
     /* right: 0; */
     /* width: 100%; */
@@ -148,10 +149,99 @@ body {
     border-color: green !important;
 }
 
+.color-black {
+    color: black;
+}
+
 .color-red {
     color: red;
 }
 
-#feedbakcspan {
+#feedbakcspan,
+#feedbakcspans,
+#feedbakcspane,
+#feedbakcspang {
     font-size: 12px;
 }
+
+/********* menu icon toggker *******/
+.menu-toggle {
+    position: relative;
+}
+
+.btn-sidenav-toggle {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 1;
+}
+
+
+
+.btn-sidenav-toggle {
+    font-size: 30px;
+    text-align: center;
+}
+
+.waves-effect {
+    /* position: relative; */
+    z-index: 1;
+
+    display: inline-block;
+    overflow: hidden;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    vertical-align: middle;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-floating {
+    line-height: 40px;
+
+    /* position: relative; */
+    z-index: 1;
+
+    display: inline-block;
+    overflow: hidden;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    cursor: pointer;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    vertical-align: middle;
+
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ff4081;
+}
+
+.z-depth-1,
+nav,
+.card-panel,
+.card,
+.toast,
+.btn,
+.btn-large,
+.btn-small,
+.btn-floating,
+.dropdown-content,
+.collapsible,
+.sidenav {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+}
+
+a {
+    text-decoration: none;
+}
+
+/**************************/
