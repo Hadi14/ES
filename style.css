@@ -186,16 +186,16 @@ ul {
 
 /********* menu icon toggker *******/
 .menu-toggle {
-    position: relative;
+    /* position: relative; */
 }
 
 .btn-sidenav-toggle {
-    position: absolute;
+    position: fixed;
     top: 6px;
     right: 6px;
     font-size: 30px;
     text-align: center;
-    /* z-index: 1021; */
+    /* z-index: 1; */
 }
 
 
