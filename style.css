@@ -21,8 +21,6 @@ body {
     padding: 0;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* transition: transform 1s linear; */
-    /* transform: translateX(100%); */
 }
 
 .overlay {
@@ -48,7 +46,7 @@ body {
 }
 
 .row {
-    margin-left: 0;
+    margin: auto 0;
 }
 
 .servers {
@@ -105,8 +103,10 @@ ul {
 
 /******************* Header -fixed */
 .inp {
-    height: 65px;
+    position: fixed;
     width: 100%;
+    top: 0;
+    height: 65px;
     background: rgb(120, 32, 162);
     background: linear-gradient(90deg, rgba(120, 32, 162, 1) 0%, rgba(109, 38, 161, 1) 36%, rgba(92, 45, 161, 1) 67%, rgba(83, 49, 160, 1) 100%);
     /* z-index: 0; */
@@ -195,7 +195,7 @@ ul {
     right: 6px;
     font-size: 30px;
     text-align: center;
-    z-index: 1021;
+    /* z-index: 1021; */
 }
 
 
