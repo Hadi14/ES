@@ -16,10 +16,10 @@
             feedbakcspane.classList.remove('color-red');
             feedbakcspang.classList.remove('color-red');
 
-            feedbakcspan.classList.add('color-black');
-            feedbakcspans.classList.add('color-black');
-            feedbakcspane.classList.add('color-black');
-            feedbakcspang.classList.add('color-black');
+            // feedbakcspan.classList.add('color-black');
+            // feedbakcspans.classList.add('color-black');
+            // feedbakcspane.classList.add('color-black');
+            // feedbakcspang.classList.add('color-black');
 
 
             let SIPRange = document.getElementById('SIPRange');
@@ -39,7 +39,7 @@
                 event.stopPropagation()
 
             }
-            if ((sip != "" && eip != "") && sip >= eip) {
+            if ((SIPRange.value != "" && EIPRange.value != "") && SIPRange.value >= EIPRange.value) {
                 feedbakcspans.classList.add('color-red');
                 feedbakcspane.classList.add('color-red');
             }
@@ -47,6 +47,7 @@
                 nameinp.classList.remove('valid');
                 nameinp.classList.add('invalid');
                 feedbakcspan.classList.add('color-red');
+                feedbakcspan.classList.remove('color-black');
             }
             else {
                 nameinp.classList.remove('invalid');
@@ -56,6 +57,7 @@
                 SIPRange.classList.remove('valid');
                 SIPRange.classList.add('invalid');
                 feedbakcspans.classList.add('color-red');
+                feedbakcspans.classList.remove('color-black');
             } else {
                 SIPRange.classList.remove('invalid');
                 SIPRange.classList.add('valid');
@@ -64,6 +66,7 @@
                 EIPRange.classList.remove('valid');
                 EIPRange.classList.add('invalid');
                 feedbakcspane.classList.add('color-red');
+                feedbakcspane.classList.remove('color-black');
             } else {
                 EIPRange.classList.remove('invalid');
                 EIPRange.classList.add('valid');
@@ -72,6 +75,7 @@
                 GWTci.classList.remove('valid');
                 GWTci.classList.add('invalid');
                 feedbakcspang.classList.add('color-red');
+                feedbakcspang.classList.remove('color-black');
             } else {
                 GWTci.classList.remove('invalid');
                 GWTci.classList.add('valid');
