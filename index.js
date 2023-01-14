@@ -97,10 +97,11 @@ tbtn.addEventListener('click', () => {
     console.log("ok");
     inp.style.zIndex = -1;
     overlay.classList.add('overlay');
+    tbtn.style.display = "none";
 })
 
 overlay.addEventListener('click', () => {
-
+    tbtn.style.display = "block";
     col4.classList.add("d-none");
     overlay.classList.remove('overlay');
 })

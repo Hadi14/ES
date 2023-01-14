@@ -102,10 +102,6 @@ ul {
 }
 
 /**********************************************/
-/* .tets-header {
-    background-color: #ff4081;
-} */
-
 
 /******************* Header -fixed */
 .inp {
@@ -137,10 +133,6 @@ ul {
 }
 
 /******************************************************/
-
-
-
-
 .header-grad {
 
     height: 185px;
@@ -203,7 +195,7 @@ ul {
     right: 6px;
     font-size: 30px;
     text-align: center;
-    z-index: 1;
+    z-index: 1021;
 }
 
 
