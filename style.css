@@ -139,13 +139,13 @@ ul {
     background: rgb(121, 32, 162);
     background: linear-gradient(90deg, rgba(121, 32, 162, 1) 0%, rgba(101, 41, 161, 1) 36%, rgba(82, 49, 160, 1) 67%, rgba(69, 54, 160, 1) 100%);
 
-    position: absolute;
-    z-index: -1;
-    top: 64px;
-    right: 0;
-    width: 100%;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all;
+    /* position: absolute; */
+    /* z-index: -1; */
+    /* top: 64px; */
+    /* right: 0; */
+    /* width: 100%; */
+    /* -webkit-transition: .3s ease all; */
+    /* transition: .3s ease all; */
 }
 
 /*  okkkkkkkkkkkkkkkkk    */
@@ -229,3 +229,12 @@ a {
 }
 
 /**************************/
+
+
+.input-group-custom {
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
