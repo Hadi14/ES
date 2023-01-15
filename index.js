@@ -93,8 +93,8 @@ const inp = document.querySelector('.inp');
 tbtn.addEventListener('click', () => {
     col4.classList.remove("d-none");
     col4.classList.add("d-block");
-    col4.style.zIndex = 1;
-    inp.style.zIndex = -1;
+    // col4.style.zIndex = 1;
+    // inp.style.zIndex = -1;
     overlay.classList.add('overlay');
     // tbtn.style.display = "none";
 })
