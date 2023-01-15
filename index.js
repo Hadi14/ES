@@ -93,14 +93,34 @@ const inp = document.querySelector('.inp');
 tbtn.addEventListener('click', () => {
     col4.classList.remove("d-none");
     col4.classList.add("d-block");
-    // col4.style.zIndex = 1;
-    // inp.style.zIndex = -1;
     overlay.classList.add('overlay');
-    // tbtn.style.display = "none";
 })
 
 overlay.addEventListener('click', () => {
     // tbtn.style.display = "block";
     col4.classList.add("d-none");
     overlay.classList.remove('overlay');
+})
+
+// window.addEventListener("resize", (event) => {
+//     if (window.innerWidth < 768)
+
+// });
+
+const hidebyclick = document.querySelectorAll('.hidebyclick');
+
+// hidebyclick.forEach(element => {
+
+// });
+
+hidebyclick.forEach(item => {
+    item.addEventListener('click', () => {
+        if (window.innerWidth < 768) {
+            col4.classList.add("d-none");
+            col4.classList.remove("d-block");
+            col4.classList.add("d-none");
+            overlay.classList.remove('overlay');
+        }
+
+    })
 })
