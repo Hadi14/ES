@@ -270,12 +270,12 @@ a {
     position: fixed;
 }
 
-.list-group-custom {
+/* .list-group-custom {
     --bs-list-group-color: var(--bs-body-color);
     --bs-list-group-bg: var(--bs-body-bg);
     --bs-list-group-border-color: var(--bs-border-color);
-    --bs-list-group-border-width: var(--bs-border-width);
-    /* --bs-list-group-border-radius: var(--bs-border-radius); */
+    --bs-list-group-border-width: var(--bs-border-width); 
+     --bs-list-group-border-radius: var(--bs-border-radius); 
     --bs-list-group-item-padding-x: 1rem;
     --bs-list-group-item-padding-y: 0.5rem;
     --bs-list-group-action-color: var(--bs-secondary-color);
@@ -293,4 +293,4 @@ a {
     padding-left: 0;
     margin-bottom: 0;
     border-radius: var(--bs-list-group-border-radius);
-}
+} */
