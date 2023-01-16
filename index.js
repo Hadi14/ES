@@ -94,7 +94,7 @@ tbtn.addEventListener('click', () => {
     col4.classList.remove("d-none");
     col4.classList.add("d-block");
     overlay.classList.add('overlay');
-    col4.style.position = "fixed";
+    col4.classList.add('pos-fixed');
 
 })
 
@@ -125,4 +125,11 @@ hidebyclick.forEach(item => {
         }
 
     })
+})
+
+window.addEventListener('resize', (event) => {
+    if (window.innerWidth < 768)
+        col4.classList.add('pos-fixed');
+    else
+        col4.classList.remove('pos-fixed');
 })
