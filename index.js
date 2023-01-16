@@ -90,10 +90,12 @@ const tbtn = document.getElementById('toggle-btn');
 const col4 = document.getElementById('col4');
 const overlay = document.getElementById('overlay');
 const inp = document.querySelector('.inp');
+// const col8 = document.querySelector('.col8');
 tbtn.addEventListener('click', () => {
     col4.classList.remove("d-none");
     col4.classList.add("d-block");
     overlay.classList.add('overlay');
+    // col8.style.zindex = -1;
 })
 
 overlay.addEventListener('click', () => {
