@@ -52,6 +52,7 @@ body {
 ul.side-menu {
     background-color: #EDEDED;
     height: 100%;
+    border-radius: 0;
 }
 
 #logodiv {
