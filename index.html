@@ -258,7 +258,91 @@
                     </div>
                     <div id="cont-edit-routers" class="tab-pane fade" role="tabpanel"
                         aria-labelledby="list-profile-list">
-                        <p>Edit Routers</p>
+                        <form id="routerform" action="" class="form-control needs-validation" novalidate>
+                            <label for="" class="form-inline">نام اداره :</label>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>انتخاب کنید...</option>
+                                <option value="1">بروجن</option>
+                                <option value="2">بن</option>
+                                <option value="3">منطقه 1 شهرکرد</option>
+                            </select>
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">پسورد en :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد en را به صورت صحیح وارد
+                                    کنید
+                            </div>
+
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">یوزر لوگین :</label>
+                                <input class="form-control" type="text" name="" id="EnPass" class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> یوزر لوگین را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">پسورد لوگین :</label>
+                                <input class="form-control" type="text" name="" id="EnPass" class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد لوگین را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <label for="" class="form-inline">نوع روتر :</label>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>انتخاب کنید...</option>
+                                <option value="1">سیسکو</option>
+                                <option value="2">میکروتیک</option>
+                            </select>
+                            <label for="" class="form-inline"> نام پورت سمت مخابرات:</label>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>انتخاب کنید...</option>
+                                <option value="1">ّF0/0</option>
+                                <option value="2">F0/1</option>
+                                <option value="3">F1/0</option>
+                                <option value="4">F1/1</option>
+                            </select>
+                            <label for="" class="form-inline"> نام پورت سمت شبکه اداره:</label>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>انتخاب کنید...</option>
+                                <option value="1">ّF0/0</option>
+                                <option value="2">F0/1</option>
+                                <option value="3">F1/0</option>
+                                <option value="4">F1/1</option>
+                            </select>
+                            <div class="form-control mt-3">
+                                <label for="GWTci" class="form-inline"> Ip پورت سمت مخابرات:</label>
+                                <input required class="form-control" type="text" name="" id="GWTci" class="form-inline">
+                                <span id="feedbakcspang" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                    کنید
+                            </div>
+                            <div class="form-control mt-3">
+                                <label for="GWTci" class="form-inline"> Ip پورت سمت اداره:</label>
+                                <input required class="form-control" type="text" name="" id="GWTci" class="form-inline">
+                                <span id="feedbakcspang" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                    کنید
+                            </div>
+                            <div class="form-control mt-3">
+                                <label for="GWTci" class="form-inline">Ip تانل سمت اداره کل:</label>
+                                <input required class="form-control" type="text" name="" id="GWTci" class="form-inline">
+                                <span id="feedbakcspang" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                    کنید
+                            </div>
+                            <div class="form-control mt-3">
+                                <label for="GWTci" class="form-inline"> Ip تانل سمت شاخه:</label>
+                                <input required class="form-control" type="text" name="" id="GWTci" class="form-inline">
+                                <span id="feedbakcspang" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                    کنید
+                            </div>
+                            <div class="form-control mt-3">
+                                <label for="stateNum" class="form-inline">شماره اموال :</label>
+                                <input class="form-control" type="text" name="" id="stateNum" class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> شماره اموال را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                        </form>
 
                     </div>
                     <div id="cont-edit-servers" class="tab-pane fade" role="tabpanel"
