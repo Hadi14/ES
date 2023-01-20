@@ -33,13 +33,29 @@
             let eip = ippatern.test(EIPRange.value);
             let gwip = ippatern.test(GWTci.value);
             isPasswordValid = ptern.test(en);
-            console.log(sip, eip);
-            if (!form.checkValidity() || !isPasswordValid || !sip || !eip || !gwip || (SIPRange.value >= EIPRange.value)) {
+            const startArray = SIPRange.value.split(".");
+            const endArray = EIPRange.value.split(".");
+            let newStartArray = startArray.map((num) => {
+                return Number(num);
+            })
+
+            let newEndArray = endArray.map((num) => {
+                return Number(num);
+            })
+            let ipComp = true;
+            for (let i = 0; i < 4; i++) {
+                if (newStartArray[i] > newEndArray[i]) {
+                    ipComp = false;
+                }
+            }
+            if (!form.checkValidity() || !isPasswordValid || !sip || !eip || !gwip || (SIPRange.value == EIPRange.value) || !ipComp) {
                 event.preventDefault()
                 event.stopPropagation()
 
             }
-            if ((SIPRange.value != "" && EIPRange.value != "") && SIPRange.value >= EIPRange.value) {
+
+            console.log(newStartArray, newEndArray, ipComp);
+            if (((SIPRange.value != "" && EIPRange.value != "") && !ipComp) || ipComp) {
                 feedbakcspans.classList.add('color-red');
                 feedbakcspane.classList.add('color-red');
             }
