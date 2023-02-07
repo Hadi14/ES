@@ -1,8 +1,8 @@
 
 (() => {
     'use strict'
-    document.querySelector('.needs-validation')
-        .addEventListener('submit', event => {
+    document.querySelectorAll('.needs-validation').forEach(elem => {
+        elem.addEventListener('submit', event => {
             const form = event.target;
             const nameinp = document.getElementById('nameinp');
             let isPasswordValid = false;
@@ -15,11 +15,6 @@
             feedbakcspans.classList.remove('color-red');
             feedbakcspane.classList.remove('color-red');
             feedbakcspang.classList.remove('color-red');
-
-            // feedbakcspan.classList.add('color-black');
-            // feedbakcspans.classList.add('color-black');
-            // feedbakcspane.classList.add('color-black');
-            // feedbakcspang.classList.add('color-black');
 
 
             let SIPRange = document.getElementById('SIPRange');
@@ -99,6 +94,7 @@
             // else // I would expect an else here
             form.classList.add('was-validated')
         })
+    })
 })()
 
 
@@ -149,3 +145,30 @@ window.addEventListener('resize', (event) => {
     else
         col4.classList.remove('pos-fixed');
 })
+
+
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+
+
+
+array.forEach(element => {
+
+});
