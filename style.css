@@ -317,3 +317,15 @@ a {
 th {
     text-align: center;
 }
+
+
+.dropdown-menu {
+    text-align: right;
+    /* min-width: 50px !important */
+}
+
+#notification {
+    color: #fff;
+    font-size: 20px;
+    /* margin: auto; */
+}

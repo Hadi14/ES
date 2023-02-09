@@ -12,49 +12,36 @@
         div {
             border: 1px solid;
         }
+
+        img {
+            width: 30px;
+        }
     </style>
 </head>
 
 <body>
 
-    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list" data-bs-toggle="list"
-        href="#list-home" role="tab" aria-controls="list-home">
-        <i class="fas fa-ethernet"></i>
-        کریو کنترل ها
-    </a>
-
-    <a class="list-group-item list-group-item-action noborder hidebyclick servers" id="list-home-list"
-        data-bs-toggle="list" href="#cont-edit-servers" role="tab" aria-controls="list-home">
-        <i class="fas fa-thumbtack"></i>
-        مشخصات کانفیگ
-    </a>
-
-
-
-
-
-
-
-
-    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list" data-bs-toggle="list"
-        href="#list-home" role="tab" aria-controls="list-home">
-        <i class="fas fa-envelope-open"></i>
-        شبکه دولت
-    </a>
-
-
-
-    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list" data-bs-toggle="list"
-        href="#list-home" role="tab" aria-controls="list-home">
-        <i class="fas fa-ethernet"></i>
-        کریو کنترل ها
-    </a>
-    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list" data-bs-toggle="list"
-        href="#list-home" role="tab" aria-controls="list-home">
-        <i class="fas fa-envelope-open"></i>
-        شبکه دولت
-    </a>
-
+    <div class="btn-group1">
+        <a class="d-flex dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="true"
+            aria-expanded="false"> <i id="notification" class="far fa-bell align-self-"></i>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> <i class="fas fa-user-circle"></i> Note1 </a>
+            </li>
+            <li><a class="dropdown-item" href="#"><i class="fa fa-question-circle"></i> Note2</a>
+            </li>
+            <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Note3</a></li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <img class="ml-auto dropdown-toggle" src="./imgs/prof.png" alt="img" data-bs-toggle="dropdown"
+            data-bs-auto-close="true" aria-expanded="false">
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i> Profile </a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Exit</a></li>
+        </ul>
+    </div>
     <script src="./bootstrap.bundle.js"></script>
     <script src="./test.js"></script>
 </body>
