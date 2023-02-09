@@ -22,7 +22,16 @@
                     <i class="fa fa-search"></i>
                     <input type=" text">
                 </div>
-                <img class="ml-auto" src="./imgs/prof.png" alt="پروفایل">
+                <div class="btn-group">
+                    <img class="ml-auto dropdown-toggle" src="./imgs/prof.png" alt="پروفایل" data-bs-toggle="dropdown"
+                        data-bs-auto-close="true" aria-expanded="false">
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">پروفایل</a></li>
+                        <li><a class="dropdown-item" href="#">راهنما</a></li>
+                        <li><a class="dropdown-item" href="#">خروج</a></li>
+                    </ul>
+                </div>
+
             </div>
             <!-- ************************************* -->
 
@@ -55,12 +64,12 @@
                         سرورها
                     </a>
                     <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list"
-                        data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                        data-bs-toggle="list" href="#cont-edit-modems" role="tab" aria-controls="list-home">
                         <i class="far fa-hdd"></i>
-                        مودم های اینترنتی
+                        مودم ها
                     </a>
                     <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list"
-                        data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                        data-bs-toggle="list" href="#cont-edit-datas" role="tab" aria-controls="list-home">
                         <i class="fas fa-tty"></i>
                         خطوط دیتا
                     </a>
@@ -497,10 +506,154 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                    <!-- ************************************ مودم ها*********************************** -->
+                    <div id="cont-edit-modems" class="tab-pane fade" role="tabpanel"
+                        aria-labelledby="list-profile-list">
 
+                        <form id="routerform" action="" class="form-control needs-validation" novalidate>
+
+                            <!-- /***************************************/ ++-->
+                            <div class="col-md-3">
+                                <label for="validationCustom01" class="form-label">نام اداره</label>
+                                <select class="form-select" id="validationCustom01" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">بروجن</option>
+                                    <option value="2">بن</option>
+                                    <option value="3">منطقه 1 شهرکرد</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    لطفا نام اداره را انتخاب کنید
+                                </div>
+                            </div>
+                            <!-- ************************************************    ++ -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline"> نام برند :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> برند را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ++-->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">مدل :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> مدل را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ++-->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">یوزر کانفیگ :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">یوزر کانفیگ را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ++-->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">پسورد کانفیگ :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد کانفیگ را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ++-->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">نام Wifi :</label>
+                                <input class="form-control" type="text" name="" id="EnPass" class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد کانفیگ را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ++-->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">پسورد Wifi :</label>
+                                <input class="form-control" type="text" name="" id="EnPass" class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد کانفیگ را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ++-->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">کد اموال :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد کانفیگ را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ++-->
+                            <div class="col-md-3">
+                                <label for="validationCustom02" class="form-label">نوع کاربری مودم </label>
+                                <select required class="form-select" id="validationCustom02" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">دیتا</option>
+                                    <option value="2">اینترنت</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    لطفا نوع کاربری مودم را انتخاب کنید
+                                </div>
+                            </div>
+                            <!-- ***************************************** ++-->
+                            <div class="col-md-3">
+                                <label for="validationCustom05" class="form-label">نوع مودم </label>
+                                <select required class="form-select" id="validationCustom02" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">باسیم</option>
+                                    <option value="2">بی سیم</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    لطفا نوع مودم را انتخاب کنید
+                                </div>
+                            </div>
+
+                            <!-- ***************************************** ++-->
+                            <div class="form-control mt-3">
+                                <label for="GWTci" class="form-inline"> Ip مودم:</label>
+                                <input required class="form-control" type="text" name="" id="GWTci" class="form-inline">
+                                <span id="feedbakcspang" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                    کنید
+                            </div>
+
+
+
+                            <!-- ***************************************** -->
+                            <div class="form-control mt-3">
+                                <label for="stateNum" class="form-inline">شماره اموال :</label>
+                                <input required class="form-control" type="text" name="" id="stateNum"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> شماره اموال را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <div class="form-control text-start mt-3">
+                                <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
+                                <button class="btn btn-warning" type="reset">از نو</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- ************************************  خطوط دیتا ************************************ -->
+                <div id="cont-edit-datas" class="tab-pane fade" role="tabpanel" aria-labelledby="list-profile-list">
+                    <p>ooooooooooooooo</p>
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
     <script src="./bootstrap.bundle.js"></script>
     <script src="./index.js"></script>
