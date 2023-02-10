@@ -96,13 +96,29 @@
                         خطوط دیتا
                     </a>
                     <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list"
-                        data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                        data-bs-toggle="list" href="#cont-edit-kerio" role="tab" aria-controls="list-home">
                         <i class="fas fa-ethernet"></i>
                         کریو کنترل ها </a>
                     <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list"
-                        data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                        data-bs-toggle="list" href="#cont-edit-dolat" role="tab" aria-controls="list-home">
                         <i class="fas fa-envelope-open"></i>
-                        شبکه دولت </a>
+                        شبکه دولت
+                    </a>
+                    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list"
+                        data-bs-toggle="list" href="#cont-edit-accesspoints" role="tab" aria-controls="list-home">
+                        <i class="fas fa-envelope-open"></i>
+                        اکسس پوینتها
+                    </a>
+                    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list"
+                        data-bs-toggle="list" href="#cont-edit-serverusers" role="tab" aria-controls="list-home">
+                        <i class="fas fa-envelope-open"></i>
+                        یوزر سرورها
+                    </a>
+                    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list"
+                        data-bs-toggle="list" href="#cont-edit-users" role="tab" aria-controls="list-home">
+                        <i class="fas fa-envelope-open"></i>
+                        یوزرهای وب سایت
+                    </a>
 
 
                     <!-- ***************************************************************** گزارشات ********************************************* -->
@@ -177,13 +193,13 @@
                 <!-- *************** محتویات************* -->
 
                 <div class="tab-content m-auto cont-det boxshadow">
-                    <!--*-***************************** فرم اطلاعات اداره ********************************** -->
+                    <!--*-*****************************  اطلاعات اداره ********************************** -->
 
                     <div id="cont-edit-office" class="tab-pane fade" role="tabpanel"
                         aria-labelledby="list-profile-list">
 
-                        <form id="Oform" action="" class="form-control needs-validation" novalidate>
-                            <div class="input-group-custom  form-control mt-3">
+                        <form id="Oform" action="" class="row form-control needs-validation" novalidate>
+                            <div class="input-group-custom  form-control mt-3 col-md-4">
                                 <label for=" OName" class="col-sm-12">نام اداره:</label>
                                 <input required id="nameinp" type="text" name="nameinp" id="OName"
                                     class="form-control col-sm-12 form-control-custom">
@@ -191,7 +207,7 @@
                                     کنید</span>
                             </div>
 
-                            <div class="input-group-custom form-control mt-3">
+                            <div class="input-group-custom form-control mt-3 col-md-4">
                                 <label class="col-sm-12" for="IPrange">رنج IP:</label>
                                 <div class="input-group-append">
                                     <span class="input-group-text ">X.</span>
@@ -205,7 +221,7 @@
 
 
 
-                            <div class="input-group-custom  form-control mt-3">
+                            <div class="input-group-custom  form-control mt-3 col-md-4">
                                 <label for="Slash" class="col-sm-12 ">سابنت IP مخابراتی(اسلش) :</label>
                                 <input required class=" form-control-custom" type="number" name="" id="Slash" max="32"
                                     min="1" class=" is-invalid">
@@ -667,10 +683,200 @@
                         </form>
 
                     </div>
-                </div>
-                <!-- ************************************  خطوط دیتا ************************************ -->
-                <div id="cont-edit-datas" class="tab-pane fade" role="tabpanel" aria-labelledby="list-profile-list">
-                    <p>ooooooooooooooo</p>
+                    <!-- ************************************  خطوط دیتا ************************************ -->
+                    <div id="cont-edit-datas" class="tab-pane fade" role="tabpanel" aria-labelledby="list-profile-list">
+                        <form id="routerform" action="" class="form-control needs-validation" novalidate>
+
+                            <!-- /***************************************/ -->
+                            <div class="col-md-3">
+                                <label for="validationCustom01" class="form-label">نام اداره</label>
+                                <select class="form-select" id="validationCustom01" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">بروجن</option>
+                                    <option value="2">بن</option>
+                                    <option value="3">منطقه 1 شهرکرد</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    لطفا نام اداره را انتخاب کنید
+                                </div>
+                            </div>
+                            <!-- ************************************************                             -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">شماره خط دیتا:</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> نام سرور را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">شماره پرونده:</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> نام کامپیوتر را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <div class="col-md-3">
+                                <label for="validationCustom01" class="form-label">نوع خط </label>
+                                <select class="form-select" id="validationCustom01" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">زوج سیم</option>
+                                    <option value="2">DSL</option>
+                                    <option value="3">Mpls </option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    لطفا نام اداره را انتخاب کنید
+                                </div>
+                            </div>
+                            <!-- ***************************************** -->
+
+                            <div class="form-control text-start mt-3">
+                                <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
+                                <button class="btn btn-warning" type="reset">از نو</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- ************************************  کریو  ************************************ -->
+
+                    <div id="cont-edit-kerio" class="tab-pane fade" role="tabpanel" aria-labelledby="list-profile-list">
+                        <form id="routerform" action="" class="form-control needs-validation" novalidate>
+
+                            <!-- /***************************************/ -->
+                            <div class="col-md-3">
+                                <label for="validationCustom01" class="form-label">نام اداره</label>
+                                <select class="form-select" id="validationCustom01" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">بروجن</option>
+                                    <option value="2">بن</option>
+                                    <option value="3">منطقه 1 شهرکرد</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    لطفا نام اداره را انتخاب کنید
+                                </div>
+                            </div>
+                            <!-- ************************************************                             -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">Ip سرور:</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> Ip سرور را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">یوزر :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> یوزر را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">پسورد:</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> پسورد را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+
+                            <div class="form-control text-start mt-3">
+                                <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
+                                <button class="btn btn-warning" type="reset">از نو</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- ************************************  دولت  ************************************ -->
+
+                    <div id="cont-edit-dolat" class="tab-pane fade" role="tabpanel" aria-labelledby="list-profile-list">
+                        <form id="routerform" action="" class="form-control needs-validation" novalidate>
+
+                            <!-- /***************************************/ -->
+                            <div class="col-md-3">
+                                <label for="validationCustom01" class="form-label">نام اداره</label>
+                                <select class="form-select" id="validationCustom01" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">بروجن</option>
+                                    <option value="2">بن</option>
+                                    <option value="3">منطقه 1 شهرکرد</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    لطفا نام اداره را انتخاب کنید
+                                </div>
+                            </div>
+                            <!-- ************************************************                             -->
+                            <div class="col-md-3">
+                                <label for="validationCustom01" class="form-label">نوع اتصال </label>
+                                <select class="form-select" id="validationCustom01" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">مستقل</option>
+                                    <option value="2">Vpn به استان</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    لطفا نوع اتصال را انتخاب کنید
+                                </div>
+                            </div>
+                            <!-- ***************************************** -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">یوزر Vpn:</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> یوزر را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">پسورد Vpn :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> پسورد را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">یوزر کانفیگ مخابراتی :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> پسورد را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <div class="form-control mt-3">
+                                <label for="EnPass" class="form-inline">پسورد کانفیگ مخابراتی :</label>
+                                <input required class="form-control" type="text" name="" id="EnPass"
+                                    class="form-inline">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> پسورد را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+
+                            <div class="form-control text-start mt-3">
+                                <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
+                                <button class="btn btn-warning" type="reset">از نو</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- ************************************  اکسس پوینتها  ************************************ -->
+                    <div id="cont-edit-accesspoints" class="tab-pane fade" role="tabpanel"
+                        aria-labelledby="list-profile-list">
+                    </div>
+                    <!-- ************************************  یوزر سرورها  ************************************ -->
+                    <div id="cont-edit-serverusers" class="tab-pane fade" role="tabpanel"
+                        aria-labelledby="list-profile-list">
+                    </div>
+                    <!-- ************************************  یوزر لوگین های سایت  ************************************ -->
+                    <div id="cont-edit-users" class="tab-pane fade" role="tabpanel" aria-labelledby="list-profile-list">
+                    </div>
                 </div>
             </div>
 
