@@ -2,13 +2,22 @@
 
 body {
     direction: rtl;
-    font-family: "iransans";
+    font-family: "iranyekan";
+    /* font-size: 14[x]; */
 }
 
 
 @font-face {
     font-family: "iransans";
     src: url('./font/irsans.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'iranyekan';
+    src:
+        url('./font/IranYekan/eot/IRANYekanWebRegular.eot') format('eot'),
+        url('./font/IranYekan/woff/IRANYekanWebRegular.woff') format('woff'),
+        url('./font/IranYekan/ttf/IRANYekanWebRegular.ttf') format('truetype');
 }
 
 .col-4 {
@@ -187,6 +196,9 @@ ul.side-menu {
 #feedbakcspan,
 #feedbakcspans,
 #feedbakcspane,
+#feedbakcspang,
+#invalid-feedback,
+#feedbackEnPass,
 #feedbakcspang {
     font-size: 12px;
 }
