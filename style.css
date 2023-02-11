@@ -295,6 +295,15 @@ a {
 .input-group-custom {
     /* position: relative; */
     display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;
+    /* z-index: 1; */
+}
+
+.input-group-custom-wrap {
+    /* position: relative; */
+    display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
