@@ -192,66 +192,71 @@
                 <!-- ************************************************************************* -->
                 <!-- *************** محتویات************* -->
 
-                <div class="tab-content m-auto  boxshadow"> <!--  cont-det -->
+                <div id="tab-cont1" class="tab-content   "> <!--  cont-det -->
                     <!--*-*****************************  اطلاعات اداره ********************************** -->
 
-                    <div id="cont-edit-office" class="tab-pane fade" role="tabpanel"
+                    <div id="cont-edit-office" class="tab-pane fade row" role="tabpanel"
                         aria-labelledby="list-profile-list">
 
-                        <form id="Oform" action="" class="row  needs-validation" novalidate> <!-- form-control -->
+                        <form id="Oform" action="" class="col-md-6 row border mx-auto needs-validation gy-4 p-1"
+                            novalidate>
+                            <!-- form-control -->
                             <!-- ------------------------- -->
-                            <div class=" col-md-4"> <!--  input-group-custom-wrap  form-control mt-3 -->
-                                <label for="nameinp" class="col-sm-12">نام اداره:</label>
-                                <input required id="nameinp" type="text" name="nameinp" id="OName"
-                                    class="form-control col-sm-12 form-control-custom">
-                                <span id="feedbakcspan" class="input-feekback col-sm-12">نام اداره را به فارسی وارد
-                                    کنید</span>
-                            </div>
-
-                            <div class="col-md-5"> <!--  input-group-custom  mt-3 col-md-4 -->
-                                <label class="form-label" for="IPrange">رنج IP:</label>
-                                <div class="input-group-custom">
-                                    <span class="input-group-text ">X.</span>
-                                    <input required class="form-control" type="number" max="254" min="1" name=""
-                                        id="IPrange">
-                                    <span dir="ltr" class="input-group-text">172.19.</span>
+                            <div class=" col-md-6"> <!--  input-group-custom-wrap  form-control mt-3 -->
+                                <label class="form-label" for="nameinp">نام اداره:</label>
+                                <div class="input-group-custom-wrap">
+                                    <input required id="nameinp" type="text" name="nameinp" id="OName"
+                                        class="form-control col-sm-12 form-control-custom">
+                                    <span id="feedbakcspan" class="input-feekback col-sm-12">نام اداره را به فارسی وارد
+                                        کنید</span>
                                 </div>
                             </div>
 
-                            <div class="col-md-4"> <!--input-group-custom  form-control mt-3 col-md-4-->
-                                <label for="Slash" class="form-label ">سابنت IP مخابراتی(اسلش) :</label>
+                            <div class="col-md-6"> <!--  input-group-custom  mt-3 col-md-4 -->
+                                <label class="form-label" for="IPrange">رنج IP:</label>
+                                <div class="input-group-custom ">
+                                    <span class="input-group-text yr">X.</span>
+                                    <input required class="form-control someInput yl yr" type="number" max="254" min="1"
+                                        name="" id="IPrange">
+                                    <span dir="ltr" class="input-group-text yl ">172.19.</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6"> <!--input-group-custom  form-control mt-3 col-md-4-->
+                                <label for="Slash" class="form-label ">سابنت IP مخابراتی(اسلش):</label>
                                 <div class="input-group-custom">
-                                    <input required class=" form-control-custom form-control" type="number" name=""
-                                        id="Slash" max="32" min="1">
-                                    <span dir="ltr" class=" input-group-text">172.19.X.X /</span>
+                                    <input required class=" form-control-custom form-control someInput yr" type="number"
+                                        name="" id="Slash" max="32" min="1">
+                                    <span dir="ltr" class=" input-group-text yl">172.19.X.X /</span>
                                 </div>
                             </div>
                             <!-- *************************** -->
-                            <div class="col-md-4 "> <!-- form-control mt-3 -->
+                            <div class="col-md-6"> <!-- form-control mt-3 -->
                                 <label for="SIPRange" class="form-inline">شروع رنج IP مخابراتی:</label>
-                                <input required class="form-control" type="text" name="" id="SIPRange"
+                                <input required class="form-control " type="text" name="" id="SIPRange"
                                     class="form-inline">
                                 <span id="feedbakcspans" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
                                     کنید
                                     <!-- <div class="invalid-feedback"></div> -->
                             </div>
-                            <div class="col-md-4 "> <!--form-control input-group-custom-wrap mt-3 -->
+                            <div class="col-md-6 "> <!--form-control input-group-custom-wrap mt-3 -->
                                 <label for="EIPRange" class="col-sm-12">پایان رنج IP مخابراتی:</label>
                                 <input required class="form-control" type="text" name="" id="EIPRange"
                                     class="form-inline">
                                 <span id="feedbakcspane" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
                                     کنید
                             </div>
-                            <div class="col-md-4 "><!-- form-control mt-3 -->
+                            <div class="col-md-6 "><!-- form-control mt-3 -->
                                 <label for="GWTci" class="form-inline"> GW مخابراتی:</label>
                                 <input required class="form-control" type="text" name="" id="GWTci" class="form-inline">
                                 <span id="feedbakcspang" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
                                     کنید
                             </div>
-                            <div class="form-control text-start mt-3">
-                                <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
-                                <button class="btn btn-warning" type="reset">از نو</button>
-                            </div>
+
+                            <!-- <div class="form-control text-start mt-3"> -->
+                            <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
+                            <button class="btn btn-warning" type="reset">از نو</button>
+                            <!-- </div> -->
                         </form>
                         <!-- ********************************************** office table    **************************************************** -->
                         <div class="tcontent boxshadow table-responsive">

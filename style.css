@@ -294,6 +294,7 @@ a {
 /*********************************************************/
 .input-group-custom {
     /* position: relative; */
+    /* position: ; */
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch;
@@ -353,4 +354,30 @@ th {
 
 #bdg {
     font-size: 10px;
+}
+
+.input-group-custom>input.someInput {
+    flex: 0 1 75px;
+}
+
+form {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 15px !important;
+    border-radius: 3px;
+}
+
+.yl {
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.yr {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+input {
+    border-radius: 4px;
 }
