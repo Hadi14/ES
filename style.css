@@ -362,8 +362,11 @@ th {
 
 form {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-top: 15px !important;
+    margin-top: -50px !important;
     border-radius: 3px;
+    background-color: #ffffff;
+    /* background: rgb(254, 75, 173); */
+    /* background: linear-gradient(180deg, rgba(254, 75, 173, 1) 0%, rgba(219, 68, 196, 1) 36%, rgba(177, 60, 223, 1) 67%, rgba(151, 55, 240, 1) 100%); */
 }
 
 .yl {
