@@ -562,9 +562,7 @@
                                     <option value="2">بن</option>
                                     <option value="3">منطقه 1 شهرکرد</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    لطفا نام اداره را انتخاب کنید
-                                </div>
+
                             </div>
                             <!-- ************************************************    ++ -->
                             <div class="col-md-6">
@@ -734,11 +732,7 @@
                             <button class="btn btn-warning" type="reset">از نو</button>
                         </form>
                     </div>
-
-
-
                     <!-- ************************************  کریو  ************************************ -->
-
                     <div id="cont-edit-kerio" class="tab-pane fade row" role="tabpanel"
                         aria-labelledby="list-profile-list">
                         <form id="routerform" action="" class="col-md-6 row mx-auto gy-4 p-1 needs-validation"
@@ -796,8 +790,8 @@
 
                             <!-- /***************************************/ -->
                             <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">نام اداره</label>
-                                <select class="form-select" id="validationCustom01" required>
+                                <label for="vaCustom01" class="form-label">نام اداره</label>
+                                <select class="form-select" id="vaCustom01" required>
                                     <option selected disabled value="">انتخاب کنید...</option>
                                     <option value="1">بروجن</option>
                                     <option value="2">بن</option>
@@ -859,13 +853,201 @@
                     <!-- ************************************  اکسس پوینتها  ************************************ -->
                     <div id="cont-edit-accesspoints" class="tab-pane fade" role="tabpanel"
                         aria-labelledby="list-profile-list">
+                        <form id="accesspointform" action="" class="col-md-6 mx-auto gy-4 p-1 row needs-validation"
+                            novalidate>
+
+                            <!-- /*************************************** ####### -->
+                            <div class="col-md-6">
+                                <label for="vCustom01" class="form-label">نام اداره</label>
+                                <select class="form-select" id="vCustom01" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">بروجن</option>
+                                    <option value="2">بن</option>
+                                    <option value="3">منطقه 1 شهرکرد</option>
+                                </select>
+
+                            </div>
+                            <!-- ************************************************    ####### -->
+                            <div class="col-md-6">
+                                <label for="abrand" class="form-label"> نام برند:</label>
+                                <input required class="form-control" type="text" name="" id="abrand">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> برند را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ####### -->
+                            <div class="col-md-6">
+                                <label for="amodel" class="form-label">مدل:</label>
+                                <input required class="form-control" type="text" name="" id="amodel">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> مدل را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+
+                            <!-- ***************************************** ####### -->
+                            <div class="col-md-6">
+                                <label for="auser" class="form-label">یوزر کانفیگ:</label>
+                                <input required class="form-control" type="text" name="" id="auser">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">یوزر کانفیگ را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ####### -->
+                            <div class="col-md-6">
+                                <label for="apass" class="form-label">پسورد کانفیگ:</label>
+                                <input required class="form-control" type="text" name="" id="apass">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد کانفیگ را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ####### -->
+                            <div class="col-md-6">
+                                <label for="awifi" class="form-label">نام Wifi:</label>
+                                <input class="form-control" type="text" name="" id="awifi">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">نام را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ####### -->
+                            <div class="col-md-6">
+                                <label for="awpass" class="form-label">پسورد Wifi:</label>
+                                <input class="form-control" type="text" name="" id="awpass">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ####### -->
+                            <div class="col-md-6">
+                                <label for="aamval" class="form-label">کد اموال:</label>
+                                <input required class="form-control" type="text" name="" id="aamval">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">کد اموال را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** ####### -->
+                            <div class="col-md-6">
+                                <label for="aip" class="form-label"> Ip اکسس پوینت:</label>
+                                <input required class="form-control" value="192.168.1.1" type="text" name="" id="aip">
+                                <span id="feedbakcspang" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
+                            <button class="btn btn-warning" type="reset">از نو</button>
+                        </form>
                     </div>
                     <!-- ************************************  یوزر سرورها  ************************************ -->
                     <div id="cont-edit-serverusers" class="tab-pane fade" role="tabpanel"
                         aria-labelledby="list-profile-list">
+                        <form id="serverusers" action="" class="col-md-6 mx-auto gy-4 p-1 row needs-validation"
+                            novalidate>
+
+                            <!-- /*************************************** %%%%%%%% -->
+                            <div class="col-md-6">
+                                <label for="uCustom01" class="form-label">نام اداره</label>
+                                <select class="form-select" id="uCustom01" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">بروجن</option>
+                                    <option value="2">بن</option>
+                                    <option value="3">منطقه 1 شهرکرد</option>
+                                </select>
+
+                            </div>
+                            <!-- ************************************************    %%%%%%%% -->
+                            <div class="col-md-6">
+                                <label for="ubrand" class="form-label"> نام سرور:</label>
+                                <input required class="form-control" type="text" name="" id="ubrand">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12"> نام را به صورت صحیح
+                                    وارد
+                                    کنید
+                            </div>
+
+
+                            <!-- ***************************************** %%%%%%%% -->
+                            <div class="col-md-6">
+                                <label for="sduser" class="form-label">نام دامین:</label>
+                                <input required class="form-control" type="text" name="" id="sduser">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">دامین را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** %%%%%%%% -->
+                            <div class="col-md-6">
+                                <label for="suser" class="form-label">یوزر:</label>
+                                <input required class="form-control" type="text" name="" id="suser">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">یوزر را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** %%%%%%%% -->
+                            <div class="col-md-6">
+                                <label for="spass" class="form-label">پسورد:</label>
+                                <input required class="form-control" type="text" name="" id="spass">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+
+
+                            <!-- ***************************************** %%%%%%%% -->
+                            <div class="col-md-6">
+                                <label for="aip" class="form-label"> Ip سرور:</label>
+                                <input required class="form-control" type="text" name="" id="aip">
+                                <span id="feedbakcspang" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** -->
+                            <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
+                            <button class="btn btn-warning" type="reset">از نو</button>
+                        </form>
                     </div>
                     <!-- ************************************  یوزر لوگین های سایت  ************************************ -->
                     <div id="cont-edit-users" class="tab-pane fade" role="tabpanel" aria-labelledby="list-profile-list">
+                        <form id="serverusers" action="" class="col-md-6 mx-auto gy-4 p-1 row needs-validation"
+                            novalidate>
+                            <!-- ***************************************** %%%%%%%% -->
+                            <div class="col-md-6">
+                                <label for="wuser" class="form-label">یوزر:</label>
+                                <input required class="form-control" type="text" name="" id="wuser">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">یوزر را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+                            <!-- ***************************************** %%%%%%%% -->
+                            <div class="col-md-6">
+                                <label for="wpass" class="form-label">پسورد:</label>
+                                <input required class="form-control" type="text" name="" id="wpass">
+                                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد را به صورت
+                                    صحیح
+                                    وارد
+                                    کنید
+                            </div>
+
+                            <!-- ***************************************** %%%%%%%% -->
+
+                            <div class="col-md-6">
+                                <label for="wCustom01" class="form-label">سطح دسترسی:</label>
+                                <select class="form-select" id="wCustom01" required>
+                                    <option selected disabled value="">انتخاب کنید...</option>
+                                    <option value="1">مدیر</option>
+                                    <option value="2">it استان</option>
+                                    <option value="3">it ادارات</option>
+                                </select>
+                            </div>
+                            <!-- ***************************************** -->
+                            <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
+                            <button class="btn btn-warning" type="reset">از نو</button>
+                        </form>
                     </div>
                 </div>
             </div>
