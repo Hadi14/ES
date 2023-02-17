@@ -97,12 +97,10 @@
                 GWTci.classList.add('invalid');
                 feedbakcspang.classList.add('color-red');
                 feedbakcspang.classList.remove('color-black');
-                // console.log("gip invalid");
             } else {
                 GWTci.classList.remove('invalid');
                 GWTci.classList.add('valid');
             }
-            // else // I would expect an else here
             form.classList.add('was-validated')
         })
     })
