@@ -3,7 +3,7 @@
     'use strict'
     document.querySelectorAll('.needs-validation').forEach(elem => {
         elem.addEventListener('submit', event => {
-            console.log("okkkkkkkkkkkkkkkkkkkkkkkkkkk");
+            // console.log("okkkkkkkkkkkkkkkkkkkkkkkkkkk");
             const form = event.target;
             const nameinp = document.getElementById('nameinp');
             let isPasswordValid = false;
@@ -12,10 +12,10 @@
             let feedbakcspane = document.getElementById('feedbakcspane');
             let feedbakcspang = document.getElementById('feedbakcspang');
 
-            feedbakcspan.classList.remove('color-red');
-            feedbakcspans.classList.remove('color-red');
-            feedbakcspane.classList.remove('color-red');
-            feedbakcspang.classList.remove('color-red');
+            // feedbakcspan.classList.remove('color-red');
+            // feedbakcspans.classList.remove('color-red');
+            // feedbakcspane.classList.remove('color-red');
+            // feedbakcspang.classList.remove('color-red');
 
 
             let SIPRange = document.getElementById('SIPRange');
@@ -54,17 +54,16 @@
 
             }
 
-            // console.log(newStartArray, newEndArray, ipComp);
-            if (((SIPRange.value != "" && EIPRange.value != "") && !ipComp) || !ipComp) {
-                feedbakcspans.classList.add('color-red');
-                feedbakcspane.classList.add('color-red');
-                // console.log("Red");
-            }
-            else {
-                feedbakcspans.classList.remove('color-red');
-                feedbakcspane.classList.remove('color-red');
-                // console.log("Black");
-            }
+            console.log(newStartArray, newEndArray, ipComp);
+            // if (((SIPRange.value != "" && EIPRange.value != "") && !ipComp) || !ipComp) {
+            //     SIPRange.classList.add('invalid');
+            //     SIPRange.classList.remove('valid');
+            //     console.log("invalid for rangeeeeee");
+            // }
+            // else {
+            //     SIPRange.classList.remove('invalid');
+            //     SIPRange.classList.add('valid');
+            // }
             if (!isPasswordValid) {
                 nameinp.classList.remove('valid');
                 nameinp.classList.add('invalid');
@@ -75,7 +74,7 @@
                 nameinp.classList.remove('invalid');
                 nameinp.classList.add('valid');
             }
-            if (!sip) {
+            if (!sip || ((SIPRange.value != "" && EIPRange.value != "") && !ipComp) || !ipComp) {
                 SIPRange.classList.remove('valid');
                 SIPRange.classList.add('invalid');
                 // feedbakcspans.classList.add('color-red');
@@ -84,7 +83,7 @@
                 SIPRange.classList.remove('invalid');
                 SIPRange.classList.add('valid');
             }
-            if (!eip) {
+            if (!eip || !ipComp) {
                 EIPRange.classList.remove('valid');
                 EIPRange.classList.add('invalid');
                 // feedbakcspane.classList.add('color-red');
