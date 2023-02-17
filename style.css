@@ -357,7 +357,7 @@ th {
 }
 
 .input-group-custom>input.someInput {
-    flex: 0 1 75px;
+    flex: 0 1 100px;
 }
 
 form {

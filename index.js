@@ -29,6 +29,7 @@
             let gwip = ippatern.test(GWTci.value);
             isPasswordValid = ptern.test(en);
             const startArray = SIPRange.value.split(".");
+            // console.log(typeof startArray);
             const endArray = EIPRange.value.split(".");
             let newStartArray = startArray.map((num) => {
                 return Number(num);
@@ -39,7 +40,10 @@
             })
             let ipComp = true;
             for (let i = 0; i < 4; i++) {
-                if (newStartArray[i] > newEndArray[i]) {
+                if (newStartArray[i] < newEndArray[i]) {
+                    break;
+                }
+                else if (newStartArray[i] > newEndArray[i]) {
                     ipComp = false;
                 }
             }
@@ -50,7 +54,7 @@
             }
 
             console.log(newStartArray, newEndArray, ipComp);
-            if (((SIPRange.value != "" && EIPRange.value != "") && !ipComp) || ipComp) {
+            if (((SIPRange.value != "" && EIPRange.value != "") && ipComp) || !ipComp) {
                 feedbakcspans.classList.add('color-red');
                 feedbakcspane.classList.add('color-red');
             }
