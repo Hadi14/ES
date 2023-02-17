@@ -54,9 +54,15 @@
             }
 
             console.log(newStartArray, newEndArray, ipComp);
-            if (((SIPRange.value != "" && EIPRange.value != "") && ipComp) || !ipComp) {
+            if (((SIPRange.value != "" && EIPRange.value != "") && !ipComp) || !ipComp) {
                 feedbakcspans.classList.add('color-red');
                 feedbakcspane.classList.add('color-red');
+                console.log("Red");
+            }
+            else {
+                feedbakcspans.classList.remove('color-red');
+                feedbakcspane.classList.remove('color-red');
+                console.log("Black");
             }
             if (!isPasswordValid) {
                 nameinp.classList.remove('valid');
