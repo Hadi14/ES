@@ -70,8 +70,8 @@
                 <!--  ******************************************** ویرایش اطلاعات   ***************************************************** -->
                 <ul class="list-group side-menu">
                     <p class="categoryname"><i class="far fa-edit"></i> ثبت و ویرایش اطلاعات </i></p>
-                    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list"
-                        data-bs-toggle="list" href="#cont-edit-office" role="tab" aria-controls="list-home">
+                    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list01"
+                        data-bs-toggle="list" href="#cont-edit-office" role="tab" aria-controls="list-home01">
                         <i class="fas fa-landmark	"></i>
                         اطلاعات اداره
                     </a>
@@ -80,8 +80,8 @@
                         <i class="fas fa-hdd"></i>
                         روترها
                     </a>
-                    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list"
-                        data-bs-toggle="list" href="#cont-edit-servers" role="tab" aria-controls="list-home">
+                    <a class="list-group-item list-group-item-action noborder hidebyclick" id="list-home-list02"
+                        data-bs-toggle="list" href="#cont-edit-servers" role="tab" aria-controls="list-home02">
                         <i class="fas fa-tv"></i>
                         سرورها
                     </a>
@@ -207,8 +207,8 @@
                                 <div class="input-group-custom-wrap">
                                     <input required id="nameinp" type="text" name="nameinp" id="OName"
                                         class="form-control col-sm-12 form-control-custom">
-                                    <span id="feedbakcspan" class="input-feekback col-sm-12">نام اداره را به فارسی وارد
-                                        کنید</span>
+                                    <span id="feedbakcspan" class="invalid-feedback">نام اداره را به فارسی وارد
+                                        کنید</span> <!-- input-feekback col-sm-12 -->
                                 </div>
                             </div>
 
@@ -235,23 +235,26 @@
                                 <label for="SIPRange" class="form-inline">شروع رنج IP مخابراتی:</label>
                                 <input required class="form-control " type="text" name="" id="SIPRange"
                                     class="form-inline">
-                                <span id="feedbakcspans" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                <span id="feedbakcspans" class="invalid-feedback">IP را به صورت صحیح وارد
                                     کنید
+                                </span> <!-- input-feekback col-sm-12 -->
                             </div>
                             <!-- *****************************************--------------- -->
                             <div class="col-md-6 "> <!--form-control input-group-custom-wrap mt-3 -->
                                 <label for="EIPRange" class="col-sm-12">پایان رنج IP مخابراتی:</label>
                                 <input required class="form-control" type="text" name="" id="EIPRange"
                                     class="form-inline">
-                                <span id="feedbakcspane" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                <span id="feedbakcspane" class="invalid-feedback">IP را به صورت صحیح وارد
                                     کنید
+                                </span> <!-- input-feekback col-sm-12 -->
                             </div>
                             <!-- *********************************---------------------- -->
                             <div class="col-md-6 "><!-- form-control mt-3 -->
                                 <label for="GWTci" class="form-inline"> GW مخابراتی:</label>
                                 <input required class="form-control" type="text" name="" id="GWTci" class="form-inline">
-                                <span id="feedbakcspang" class="input-feekback col-sm-12">IP را به صورت صحیح وارد
+                                <span id="feedbakcspang" class="invalid-feedback">IP را به صورت صحیح وارد
                                     کنید
+                                </span> <!-- input-feekback col-sm-12 -->
                             </div>
 
                             <!-- <div class="form-control text-start mt-3"> -->
@@ -333,6 +336,7 @@
                                 <input required class="form-control" type="text" name="" id="EnPass">
                                 <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد en را به صورت صحیح وارد
                                     کنید
+                                </span>
                             </div>
                             <!-- ***************************************** -->
                             <div class="col-md-6">
@@ -341,6 +345,7 @@
                                 <span id="feedbackEnPass" class="input-feekback col-sm-12"> یوزر لوگین را به صورت صحیح
                                     وارد
                                     کنید
+                                </span>
                             </div>
                             <!-- ***************************************** -->
                             <div class="col-md-6">
@@ -349,6 +354,7 @@
                                 <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد لوگین را به صورت صحیح
                                     وارد
                                     کنید
+                                </span>
                             </div>
                             <!-- ***************************************** -->
                             <div class="col-md-6">
@@ -358,9 +364,10 @@
                                     <option value="1">سیسکو</option>
                                     <option value="2">میکروتیک</option>
                                 </select>
-                                <div class="invalid-feedback">
+                                <!-- <div class="invalid-feedback">
                                     لطفا نوع روتر را انتخاب کنید
-                                </div>
+                                </div> -->
+                                <span id="feedbackEnPass" class="invalid-feedback">لطفا نوع روتر را انتخاب کنید</span>
                             </div>
                             <!-- ***************************************** -->
                             <div class="col-md-6">

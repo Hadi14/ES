@@ -77,8 +77,8 @@
             if (!sip) {
                 SIPRange.classList.remove('valid');
                 SIPRange.classList.add('invalid');
-                feedbakcspans.classList.add('color-red');
-                feedbakcspans.classList.remove('color-black');
+                // feedbakcspans.classList.add('color-red');
+                // feedbakcspans.classList.remove('color-black');
             } else {
                 SIPRange.classList.remove('invalid');
                 SIPRange.classList.add('valid');
@@ -86,8 +86,8 @@
             if (!eip) {
                 EIPRange.classList.remove('valid');
                 EIPRange.classList.add('invalid');
-                feedbakcspane.classList.add('color-red');
-                feedbakcspane.classList.remove('color-black');
+                // feedbakcspane.classList.add('color-red');
+                // feedbakcspane.classList.remove('color-black');
             } else {
                 EIPRange.classList.remove('invalid');
                 EIPRange.classList.add('valid');
@@ -95,8 +95,8 @@
             if (!gwip) {
                 GWTci.classList.remove('valid');
                 GWTci.classList.add('invalid');
-                feedbakcspang.classList.add('color-red');
-                feedbakcspang.classList.remove('color-black');
+                // feedbakcspang.classList.add('color-red');
+                // feedbakcspang.classList.remove('color-black');
             } else {
                 GWTci.classList.remove('invalid');
                 GWTci.classList.add('valid');
