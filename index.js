@@ -53,16 +53,16 @@
 
             }
 
-            console.log(newStartArray, newEndArray, ipComp);
+            // console.log(newStartArray, newEndArray, ipComp);
             if (((SIPRange.value != "" && EIPRange.value != "") && !ipComp) || !ipComp) {
                 feedbakcspans.classList.add('color-red');
                 feedbakcspane.classList.add('color-red');
-                console.log("Red");
+                // console.log("Red");
             }
             else {
                 feedbakcspans.classList.remove('color-red');
                 feedbakcspane.classList.remove('color-red');
-                console.log("Black");
+                // console.log("Black");
             }
             if (!isPasswordValid) {
                 nameinp.classList.remove('valid');
@@ -97,6 +97,7 @@
                 GWTci.classList.add('invalid');
                 feedbakcspang.classList.add('color-red');
                 feedbakcspang.classList.remove('color-black');
+                // console.log("gip invalid");
             } else {
                 GWTci.classList.remove('invalid');
                 GWTci.classList.add('valid');
