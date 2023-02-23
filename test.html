@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Document</title>
@@ -16,19 +15,119 @@
 </head>
 
 <body>
-    <form class="row g-3">
-        <div class="col-md-6"> <!--  input-group-custom  mt-3 col-md-4 -->
-            <label class="form-label" for="IPrange">رنج IP:</label>
-            <div class="input-group-custom ">
-                <span class="input-group-text yr">X.</span>
-                <input required class="form-control someInput yl yr" type="number" max="254" min="1" name=""
-                    id="IPrange">
-                <span dir="ltr" class="input-group-text yl ">172.19.</span>
+    <div id="cont-edit-office" class=" row" role="tabpanel" aria-labelledby="list-profile-list">
+
+        <form id="Oform" action="" class="col-md-6 row mx-auto gy-4 p-1   border needs-validation " novalidate>
+
+            <!--------------------------- -->
+            <div class="col-md-6">
+                <label class="form-label" for="nameinp">نام اداره:</label>
+                <div class="input-group-custom-wrap">
+                    <input required id="nameinp" type="text" name="nameinp" id="OName"
+                        class="form-control col-sm-12 form-control-custom">
+                    <span id="feedbakcspan" class="invalid-feedback">نام اداره را به فارسی وارد
+                        کنید</span> <!-- input-feekback col-sm-12 -->
+                </div>
             </div>
-        </div>
-    </form>
+
+            <div class="col-md-6"> <!--  input-group-custom  mt-3 col-md-4 -->
+                <label class="form-label" for="IPrange">رنج IP:</label>
+                <div class="input-group-custom ">
+                    <span class="input-group-text yr">X.</span>
+                    <input required class="form-control someInput yl yr" type="number" max="254" min="1" name=""
+                        id="IPrange">
+                    <span dir="ltr" class="input-group-text yl ">172.19.</span>
+                </div>
+            </div>
+
+            <div class="col-md-6"> <!--input-group-custom  form-control mt-3 col-md-4-->
+                <label for="Slash" class="form-label ">سابنت IP مخابراتی(اسلش):</label>
+                <div class="input-group-custom">
+                    <input required class=" form-control-custom form-control someInput yr" type="number" name=""
+                        id="Slash" max="32" min="1">
+                    <span dir="ltr" class=" input-group-text yl">172.19.X.X /</span>
+                </div>
+            </div>
+            <!-- *************************** -->
+            <div class="col-md-6"> <!-- form-control mt-3 -->
+                <label for="SIPRange" class="form-label">شروع رنج IP مخابراتی:</label>
+                <input required class="form-control " type="text" name="" id="SIPRange" class="form-inline">
+                <span id="feedbakcspans" class="invalid-feedback">IP را به صورت صحیح وارد
+                    کنید
+                </span> <!-- input-feekback col-sm-12 -->
+            </div>
+            <!-- *****************************************--------------- -->
+            <div class="col-md-6 "> <!--form-control input-group-custom-wrap mt-3 -->
+                <label for="EIPRange" class="form-label">پایان رنج IP مخابراتی:</label>
+                <input required class="form-control" type="text" name="" id="EIPRange" class="form-inline">
+                <span id="feedbakcspane" class="invalid-feedback">IP را به صورت صحیح وارد
+                    کنید
+                </span> <!-- input-feekback col-sm-12 -->
+            </div>
+            <!-- *********************************---------------------- -->
+            <div class="col-md-6 "><!-- form-control mt-3 -->
+                <label for="GWTci" class="form-label"> GW مخابراتی:</label>
+                <input required class="form-control" type="text" name="" id="GWTci" class="form-inline">
+                <span id="feedbakcspang" class="invalid-feedback">IP را به صورت صحیح وارد
+                    کنید
+                </span> <!-- input-feekback col-sm-12 -->
+            </div>
+
+            <!-- <div class="form-control text-start mt-3"> -->
+            <button class="btn btn-success" id="submitbtn" type="submit">ثبت اطلاعات</button>
+            <button class="btn btn-warning" type="reset">از نو</button>
+            <!-- </div> -->
+        </form>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- ***************************************************************************************************************************** -->
+    <div id="cont-edit-users" role="tabpanel" aria-labelledby="list-profile-list">
+
+        <form id="serverusers" action="" class="col-md-6 mx-auto gy-4 p-1 row needs-validation border" novalidate>
+            <!-- ***************************************** %%%%%%%% -->
+            <div class="col-md-6">
+                <label for="wuser" class="form-label">یوزر:</label>
+                <input required class="form-control" type="text" name="" id="wuser">
+                <span id="feedbackEnPass" class="input-feekback col-sm-12">یوزر را به صورت
+                    صحیح
+                    وارد
+                    کنید
+                </span>
+            </div>
+            <!-- ***************************************** %%%%%%%% -->
+            <div class="col-md-6">
+                <label for="wpass" class="form-label">پسورد:</label>
+                <input required class="form-control" type="text" name="" id="wpass">
+                <span id="feedbackEnPass" class="input-feekback col-sm-12">پسورد را به صورت
+                    صحیح
+                    وارد
+                    کنید
+                </span>
+            </div>
+
+            <!-- ***************************************** %%%%%%%% -->
+
+            <div class="col-md-6">
+                <label for="wCustom01" class="form-label">سطح دسترسی:</label>
+                <select class="form-select" id="wCustom01" required>
+                    <option selected disabled value="">انتخاب کنید...</option>
+                    <option value="1">مدیر</option>
+                    <option value="2">it استان</option>
+                    <option value="3">it ادارات</option>
+                </select>
+            </div>
+            <!-- ***************************************** -->
+            <button class="btn btn-success" id="submitbtn10" type="submit">ثبت اطلاعات</button>
+            <button class="btn btn-warning" type="reset">از نو</button>
+        </form>
+    </div>
+
+
     <script src="./bootstrap.bundle.js"></script>
-    <script src="./index.js"></script>
+    <script src="./text.js"></script>
 </body>
 
 </html>
